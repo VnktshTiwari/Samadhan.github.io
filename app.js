@@ -58,7 +58,7 @@ class CivicFixApp {
                 
                 // Mission
                 mission_title: "Our Mission",
-                mission_text: "CivicFix bridges the gap between citizens and local government by providing a transparent, efficient platform for reporting and resolving civic issues. We believe in empowering communities through technology, data-driven insights, and collaborative problem-solving.",
+                mission_text: "Samadhan bridges the gap between citizens and local government by providing a transparent, efficient platform for reporting and resolving civic issues. We believe in empowering communities through technology, data-driven insights, and collaborative problem-solving.",
                 
                 // Quick nav
                 quick_nav_title: "Quick Actions",
@@ -145,7 +145,7 @@ class CivicFixApp {
     }
 
     async init() {
-        console.log('Initializing CivicFix App...');
+        console.log('Initializing Samadhan App...');
         try {
             await this.loadCivicData();
             this.detectTheme();
@@ -162,7 +162,7 @@ class CivicFixApp {
             // Add resize event listener for mobile compatibility
             this.setupResizeListener();
             
-            console.log('CivicFix App initialized successfully');
+            console.log('Samadhan App initialized successfully');
         } catch (error) {
             console.error('Initialization error:', error);
         }
@@ -381,7 +381,7 @@ class CivicFixApp {
                 {
                     name: "Sarah Johnson",
                     location: "Downtown Core",
-                    comment: "CivicFix made it so easy to report the pothole on my street. It was fixed within a week!",
+                    comment: "Samadhan made it so easy to report the pothole on my street. It was fixed within a week!",
                     rating: 5,
                     issue_type: "Road Maintenance"
                 },
@@ -1697,7 +1697,7 @@ class CivicFixApp {
     }
 
     async getGeminiResponse(userMessage) {
-        const civicContext = `You are an AI assistant for CivicFix, a civic issue reporting platform that connects citizens with local government. 
+        const civicContext = `You are an AI assistant for Samadhan, a civic issue reporting platform that connects citizens with local government. 
 
 Your role is to help users with:
 - Understanding how to report civic issues (potholes, streetlights, water problems, waste management, etc.)
@@ -2318,11 +2318,11 @@ User question: ${userMessage}`;
 
 // FIXED: Initialize the app when DOM is loaded with proper error handling
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('DOM loaded, initializing FIXED CivicFix App...');
+    console.log('DOM loaded, initializing FIXED Samadhan App...');
     try {
         window.civicFixApp = new CivicFixApp();
     } catch (error) {
-        console.error('Failed to initialize CivicFix App:', error);
+        console.error('Failed to initialize Samadhan App:', error);
     }
 });
 
@@ -2334,7 +2334,7 @@ if (document.readyState !== 'loading') {
             try {
                 window.civicFixApp = new CivicFixApp();
             } catch (error) {
-                console.error('Failed to initialize CivicFix App via backup:', error);
+                console.error('Failed to initialize Samadhan App via backup:', error);
             }
         }
     }, 100);
