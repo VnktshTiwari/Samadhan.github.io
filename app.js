@@ -30,7 +30,7 @@ class CivicFixApp {
         };
         
         // Gemini AI Configuration
-        this.geminiApiKey = 'AIzaSyB3pk8fqbaw7Ks0Hh5MUPxxQ6NxdpPd7dk';
+        this.geminiApiKey = 'AIzaSyAh00q75s0rLjDzqt4HBKR1GUjxtfsQ7uc';
         this.geminiApiUrl = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent';
         this.isTyping = false;
         
